@@ -20,9 +20,11 @@ Going directly to the mathematical formulation of the problem, we have a dataset
 we can construct a symmetric Qubo matrix as
 
 
-$Q = -R(k) - I(k) + \lambda(\sum_{i}^{M} x_i - k )^2$ where,
+$Q = -R(k) - I(k) + \lambda(\sum_{i}^{M} x_i - k )^2$ where $k \in M$,
 
-$R_{i,j} = H(X|Z) + H(Y|Z) - H(X,Y|Z)$ for $i \neq j$, $I_i = H(X,y) - H(X|y) - H(y|X)$ for $i = j$   
+$R_{i,j} = H(X|Z) + H(Y|Z) - H(X,Y|Z)$ for $i \neq j$,
+
+$I_i = H(X,y) - H(X|y) - H(y|X)$ for $i = j$   
 
 
 - What was your motivation?
