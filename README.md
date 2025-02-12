@@ -14,8 +14,15 @@ It contians files to handle a structured dataset (*breast cancer* dataset provid
 ## Background
 
 Quantum computing aims of assessing unsolved or hard-to-be-solved in a polynomial time (NP-hard) computational problems such as combinatorial optimization problems (**COPs**) as *Maximum Cut Problem (MaxCut)*, *Travel Salesman Problem (TSP)*, *Knapstack Problem* and so on. One of these COPs which has a large impact on Machine Learning frameworks is the **Feature Selection Problem**. It consist of selecting a maximum number of features in a given dataset by minimizing and maximizing the Redundancy and Importance matrices respectively. One of the technique we could use to address this exponentially large problem (which depends on the number of features present in the dataset and by the number of samples in it) is o use *Quantum Annealer* approach, by mapping the problem into a **Quadratic Unconstrained Binary Optimization (QUBO)** problem.
-Going directly to the mathematical formulation of the problem, we have a dataset $S$ which contains $N$ samples characterized by $M$ features each as it follows $S = {x^j}$ 
-$Q = $
+
+
+Going directly to the mathematical formulation of the problem, we have a dataset $S$ which contains $N$ samples characterized by $M$ features each as it follows $S = {x_{i=1, ..., N}^{j=1, ..., M}}$,
+we can construct a symmetric Qubo matrix as
+
+
+$Q = -R(k) - I(k) + \lambda(\sum_{i}^{M} x_i - k )^2$ where,
+
+$R_{i,j} = H(X|Z) + H(Y|Z) - H(X,Y|Z)$ for $i \neq j$, $I_i = H(X,y) - H(X|y) - H(y|X)$ for $i = j$   
 
 
 - What was your motivation?
