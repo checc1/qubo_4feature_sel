@@ -1,5 +1,7 @@
 # Qubo formulation of Feature Selection Problem
 
+<img src="/Users/francescoaldoventurelli/Downloads/feature_sel_ml.jpg" width="128"/>
+
 This repository contains a Qubo formulation problem to assess **Feature Selection** in classical Machine Learning frameworks.
 It contians files to handle a structured dataset (*breast cancer* dataset provided by *Scikit-Learn* is used), to create and evaluate **Redundancy** and **Importance** matrices originated from the **Mutual and Conditional Mutual Information** between features and labels. Subsequently, the symmetric $n x n$ Qubo matrix $Q$ is constructed. 
 
