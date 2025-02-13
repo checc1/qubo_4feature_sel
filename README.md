@@ -38,7 +38,7 @@ $P = \lambda(\sum_i x_i - k)^2 = \lambda(\sum_i x_i - 2k\sum_{i \neq j} x_i x_j)
 This is how the Qubo matrix looks like with a tuning parameter $\lambda = 2.8$
 
 
-<h1>Qubo matrixL</h1>
+<h1>Qubo matrix</h1>
 
 <img
   src="/imgs/qubo_matrix_pretty.png"
@@ -46,27 +46,9 @@ This is how the Qubo matrix looks like with a tuning parameter $\lambda = 2.8$
   title="QUBO matrix Heatmap" />
 <blockquote>
   <p>
-    But down there it would be dark now, and not the lovely lighted aquarium she
-    imagined it to be during the daylight hours, eddying with schools of tiny,
-    delicate animals floating and dancing slowly to their own serene currents
-    and creating the look of a living painting. That was wrong, in any case. The
-    ocean was different from an aquarium, which was an artificial environment.
-    The ocean was a world. And a world is not art. Dorothy thought about the
-    living things that moved in that world: large, ruthless and hungry. Like us
-    up here.
+    As we can see, the Qubo matrix has negative values on the diagonal corresponding to the Importance matrix while values approaching 0 to the off-diagonal elements which results in a way of penalizing Redundancy while maximizing the Importance. In addition, we have added the penalty term to select exactly k features.
   </p>
-  <footer>- Rachel Ingalls, <cite>Mrs. Caliban</cite></footer>
 </blockquote>
-
-
-
-<img width="512" src="/imgs/qubo_matrix_pretty.png" align="left" />
-
-<div align="right">
-As we can see, the Qubo matrix has negative values on the diagonal corresponding to the Importance matrix while values approaching 0 to the off-diagonal elements which results in a way of penalizing Redundancy while maximizing the Importance.
-</div>
-
-
 
 
 Afterwards, once we have constructed the Qubo matrix $Q$ we encode the problem into a Dwave quantum annealing or a classical simulated annealing and we solve this last equation:
@@ -75,8 +57,3 @@ $$ \arg\min_x \mathbf{x}^TQ\mathbf{x} $$
 
 which will lead to a bitstring $\mathbf{x}$ that is our solution. In this context, selected features are represented as $1$ in the solution, while the discarded features are labeled as $0$.
 
-### Motivation
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
