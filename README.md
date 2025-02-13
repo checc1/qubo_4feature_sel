@@ -35,8 +35,7 @@ Before getting the solution out of the Qubo matrix, we decided to add an extra t
 
 $P = \lambda(\sum_i x_i - k)^2 = \lambda(\sum_i x_i - 2k\sum_{i \neq j} x_i x_j)$ 
 
-This is how the Qubo matrix looks like with a tuning parameter $\lambda = 2.8$
-<img src="/imgs/qubo_matrix.png" width="256"/>
+This is how the Qubo matrix looks like with a tuning parameter $\lambda = 2.8$  <img src="/imgs/qubo_matrix.png" width="512"/>
 
 
 Afterwards, once we have constructed the Qubo matrix $Q$ we encode the problem into a Dwave quantum annealing or a classical simulated annealing and we solve this last equation
