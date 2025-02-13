@@ -40,17 +40,17 @@ This is how the Qubo matrix looks like with a tuning parameter $\lambda = 2.8$
 
 <img width="512" src="/imgs/qubo_matrix.png" align="left" />
 
-<p align="right">
+<div align="right">
 As we can see, the Qubo matrix has negative values on the diagonal corresponding to the Importance matrix while values approaching 0 to the off-diagonal elements which results in a way of penalizing Redundancy while maximizing the Importance.
-</p>
+</div>
 
-<p align="left">
-Afterwards, once we have constructed the Qubo matrix $Q$ we encode the problem into a Dwave quantum annealing or a classical simulated annealing and we solve this last equation
+Afterwards, once we have constructed the Qubo matrix $Q$ we encode the problem into a Dwave quantum annealing or a classical simulated annealing and we solve this last equation:
 
-$argmin_x \mathbf{x}^TQ\mathbf{x}$
+$$ \arg\min_x \mathbf{x}^TQ\mathbf{x} $$
 
-which will lead to a bitstring $\mathbf{x}$ that is our solution. In this context, selected features are represented as $1$ in the solution, while the discarded features are labelled as $0$.
+which will lead to a bitstring $\mathbf{x}$ that is our solution. In this context, selected features are represented as $1$ in the solution, while the discarded features are labeled as $0$.
 
+### Motivation
 - What was your motivation?
 - Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
 - What problem does it solve?
