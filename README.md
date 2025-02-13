@@ -43,7 +43,6 @@ This is how the Qubo matrix looks like with a tuning parameter $\lambda = 2.8$
 <div align="right">
 As we can see, the Qubo matrix has negative values on the diagonal corresponding to the Importance matrix while values approaching 0 to the off-diagonal elements which results in a way of penalizing Redundancy while maximizing the Importance.
 </div>
-
 Afterwards, once we have constructed the Qubo matrix $Q$ we encode the problem into a Dwave quantum annealing or a classical simulated annealing and we solve this last equation:
 
 $$ \arg\min_x \mathbf{x}^TQ\mathbf{x} $$
