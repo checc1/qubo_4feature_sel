@@ -38,7 +38,7 @@ $P = \lambda(\sum_i x_i - k)^2 = \lambda(\sum_i x_i - 2k\sum_{i \neq j} x_i x_j)
 This is how the Qubo matrix looks like with a tuning parameter $\lambda = 2.8$
 
 
-<img width="512" src="/imgs/qubo_matrix.png" align="left" />
+<img width="512" src="/imgs/qubo_matrix_pretty.png" align="left" />
 
 <div align="right">
 As we can see, the Qubo matrix has negative values on the diagonal corresponding to the Importance matrix while values approaching 0 to the off-diagonal elements which results in a way of penalizing Redundancy while maximizing the Importance.
