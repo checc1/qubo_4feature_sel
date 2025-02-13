@@ -38,6 +38,28 @@ $P = \lambda(\sum_i x_i - k)^2 = \lambda(\sum_i x_i - 2k\sum_{i \neq j} x_i x_j)
 This is how the Qubo matrix looks like with a tuning parameter $\lambda = 2.8$
 
 
+<h1>Qubo matrixL</h1>
+
+<img
+  src="/imgs/qubo_matrix_pretty.png"
+  alt="Qubo matrix which combines Redundancy, Importance matrix and the penalty term."
+  title="QUBO matrix Heatmap" />
+<blockquote>
+  <p>
+    But down there it would be dark now, and not the lovely lighted aquarium she
+    imagined it to be during the daylight hours, eddying with schools of tiny,
+    delicate animals floating and dancing slowly to their own serene currents
+    and creating the look of a living painting. That was wrong, in any case. The
+    ocean was different from an aquarium, which was an artificial environment.
+    The ocean was a world. And a world is not art. Dorothy thought about the
+    living things that moved in that world: large, ruthless and hungry. Like us
+    up here.
+  </p>
+  <footer>- Rachel Ingalls, <cite>Mrs. Caliban</cite></footer>
+</blockquote>
+
+
+
 <img width="512" src="/imgs/qubo_matrix_pretty.png" align="left" />
 
 <div align="right">
