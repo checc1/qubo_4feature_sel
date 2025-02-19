@@ -60,13 +60,13 @@ $$ \arg\min_x \mathbf{x}^TQ\mathbf{x} $$
 which will lead to a bitstring $\mathbf{x}$ that is our solution. In this context, selected features are represented as $1$ in the solution, while the discarded features are labeled as $0$.
 
 Once we obtained the solution $\mathbf{x}$ out of the Qubo matrix, we test the same model (obviously re-initialized) on the original adn reduced dataset. Here we chose a RandomForestClassifier provided by *scikit-learn*. Instead of printing the accuracy score we plot the estimation of permutation importance to see if there are importance relationships between the selected and the original features.
-<h1>Qubo matrix</h1>
+<h1>Feature Importance</h1>
 
 <img
   src="/imgs/feature_importance.png"
   alt="Estimation of the permutation index $R$."
   title="Feature imporance" 
-  width="512"
+  width="1024"
   />
 
 ## Installation
