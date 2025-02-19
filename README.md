@@ -41,7 +41,7 @@ This is how the Qubo matrix looks like with a tuning parameter $\lambda = 2.8$
 <h1>Qubo matrix</h1>
 
 <img
-  src="/imgs/qubo_matrix_pretty.png"
+  src="/imgs/qubo_matrix.png"
   alt="Qubo matrix which combines Redundancy, Importance matrix and the penalty term."
   title="QUBO matrix Heatmap" />
 <blockquote>
