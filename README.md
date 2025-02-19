@@ -68,13 +68,13 @@ which will lead to a bitstring $\mathbf{x}$ that is our solution. In this contex
   title="Feature imporance" 
   width="1024"
   />
-  <blockquote>
+<blockquote>
   <p>
   Once we obtained the solution $\mathbf{x}$ out of the Qubo matrix, we test the same model (obviously re-initialized) on the original adn reduced dataset. Here we chose a     
   RandomForestClassifier provided by *scikit-learn*. Instead of printing the accuracy score we plot the estimation of permutation importance to see if there are importance 
   relationships between the selected and the original features.
   <p>
-  <blockquote>
+<blockquote>
   
 
 ## Installation
