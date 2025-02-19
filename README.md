@@ -66,7 +66,21 @@ git clone https://github.com/checc1/qubo_4feature_sel.git
 ```
 2. Dependencies
 ```bash
-numpy=
+dimod==0.12.18
+dwave-cloud-client==0.13.2
+dwave-neal==0.6.0
+dwave-optimization==0.4.3
+dwave-preprocessing==0.6.7
+dwave-samplers==1.4.0
+dwave-system==1.28.0
+dwave_networkx==0.8.16
+matplotlib==3.10.0
+matplotlib-inline==0.1.7
+numpy==2.0.2
+pandas==2.2.3
+pyqubo==1.5.0
+scikit-learn==1.6.1
+seaborn==0.13.2
 ```
 
 
