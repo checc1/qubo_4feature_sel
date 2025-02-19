@@ -43,7 +43,9 @@ This is how the Qubo matrix looks like with a tuning parameter $\lambda = 2.8$
 <img
   src="/imgs/qubo_matrix.png"
   alt="Qubo matrix which combines Redundancy, Importance matrix and the penalty term."
-  title="QUBO matrix Heatmap" />
+  title="QUBO matrix Heatmap" 
+  width="512"
+  />
 <blockquote>
   <p>
     As we can see, the Qubo matrix has negative values on the diagonal corresponding to the Importance matrix while values approaching 0 to the off-diagonal elements which results in a way of penalizing Redundancy while maximizing the Importance. In addition, we have added the penalty term to select exactly k features.
@@ -51,9 +53,20 @@ This is how the Qubo matrix looks like with a tuning parameter $\lambda = 2.8$
 </blockquote>
 
 
-Afterwards, once we have constructed the Qubo matrix $Q$ we encode the problem into a Dwave quantum annealing or a classical simulated annealing and we solve this last equation:
+Afterwards, once we have constructed the Qubo matrix $Q$ we encode the problem into a Dwave quantum annealing or a classical simulated annealing (as here is used) and we solve this last equation:
 
 $$ \arg\min_x \mathbf{x}^TQ\mathbf{x} $$
 
 which will lead to a bitstring $\mathbf{x}$ that is our solution. In this context, selected features are represented as $1$ in the solution, while the discarded features are labeled as $0$.
+
+## Installation
+1. Clone the repository
+```bash
+git clone https://github.com/checc1/qubo_4feature_sel.git
+```
+2. Dependencies
+```bash
+numpy=
+```
+
 
